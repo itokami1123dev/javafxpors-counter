@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.example.controller.CounterViewController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="281.0" prefWidth="286.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <Label id="label" fx:id="counter" prefHeight="29.0" prefWidth="60.0" text="counter" />
+          </children>
+        </HBox>
+        <Button minHeight="16.000091552734375" onAction="#countUp" prefHeight="29.0" prefWidth="98.0" text="PUSH!" />
+      </children>
+    </VBox>
+  </children>
+</VBox>

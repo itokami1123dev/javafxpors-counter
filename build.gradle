@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+ 
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.0.0-b10'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+mainClassName = 'com.example.MainApplication'
+version = '8u40'
+
+repositories {
+    jcenter()
+}
+
+jfxmobile {
+    ios {
+        forceLinkClasses = ['com.**.*']
+        infoPList = file('src/ios/assets/info.plist.xml')
+    }
+    android {
+        applicationPackage = 'org.javafxports.ensemble'
+    }
+}
